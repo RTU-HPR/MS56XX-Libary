@@ -1,4 +1,3 @@
-#ifdef MS56XX_ENABLE
 #include "MS56XX.h"
 
 MS56XX::MS56XX(void (*error_function)(String), String sensor_name) : Sensor_Wrapper(sensor_name, error_function)
@@ -203,5 +202,3 @@ void MS56XX::initConstants(uint8_t altered_mode)
     C[4] = 1.5625e-2;
   }
 }
-
-#endif

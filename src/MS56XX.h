@@ -16,8 +16,6 @@
     - Removed unnecessary code
 */
 
-#ifdef MS56XX_ENABLE
-
 #include "Sensor_wrapper.h"
 #include <Wire.h>
 
@@ -123,5 +121,3 @@ public:
    */
   bool read(MS56XX_Data &data,  float outside_temperature = 15);
 };
-
-#endif
